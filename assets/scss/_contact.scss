@@ -1,0 +1,40 @@
+.contact {
+	background: #1a1a1a;
+	padding: 50px 0;
+	&__form {
+		max-width: 600px;
+		margin: 0 auto;
+	}
+}
+.showroom {
+	&__grid {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 30px;
+		padding: 50px 0;
+	}
+	&-items {
+		&__name {
+			font-family: $font-secondary;
+			font-size: 20px;
+			margin-bottom: 10px;
+		}
+		&__row {
+			font-family: $font-secondary;
+			font-size: 15px;
+			margin-bottom: 10px;
+		}
+		&__map {
+			height: 450px;
+			iframe {
+				display: block;
+				width: 100%!important;
+				height: 100%!important;
+				border: 0!important;
+			}
+		}
+	}
+}
+.btn-primary {
+	background: $color1;
+}

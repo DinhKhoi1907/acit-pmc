@@ -1,0 +1,20 @@
+.lazada-input-excel{padding: 3rem 1.5rem;position: relative;background: rgba(38, 185, 154, 0.2);cursor: pointer;border: 2px dashed rgba(38, 185, 154, 0.4);border-radius: 5px;}
+
+.lazada-input-excel label{position: absolute;top: 0;left: 0;width: 100%;height: 100%;cursor: pointer;display: flex; justify-content: center; align-items: center; font-size: 20px;color: #666;}
+.lazada-input-excel input{opacity: 0;}
+.lazada-input-excel label i{font-size: 50px;}
+
+.lazada-format-excel{border: 1px dashed #ebebeb; border-radius: 5px; padding: 1rem;margin-top: 1rem;display: flex; gap: 30px;}
+.lazada-format-excel label{margin-bottom: 0;}
+.lazada-format-excel-item{display: flex; align-items: center;gap: 5px;cursor: pointer;}
+
+
+/*=== INFORM ===*/
+.inform-lazada-layout{display: flex;justify-content: center;align-items: center;max-width: 60%; margin: auto;border-radius: 4px; box-shadow: 0px 0px 5px #ebebeb;padding: 1rem;}
+.inform-lazada-content{border: 2px dashed rgba(38, 185, 154, 0.2);width: 100%; text-align: center;border-radius: 3px;padding: 1rem;}
+.inform-lazada-title{text-transform: uppercase;color: #26b99a;font-size: 20px;font-weight: bold;}
+.inform-lazada-box{display: flex;gap: 10px;align-items: center; justify-content: center;}
+.inform-lazada-box i{font-size: 40px;color: rgb(38 185 154 / 30%);}
+.inform-lazada-descript{font-size: 18px; text-align: left;color: #666;}
+.inform-lazada-btn{text-align: center;}
+.inform-lazada-btn a{display: inline-block;color: #fff;background: #26b99a;border-radius: 4px;padding: 0.5rem;text-transform: capitalize;font-weight: bold;}

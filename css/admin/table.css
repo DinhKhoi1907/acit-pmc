@@ -1,0 +1,9 @@
+.tabledb-layout{display: flex;gap: 40px;}
+.tabledb-left{width: 20%;}
+.tabledb-right{width: 80%;}
+.tabledb-ul{list-style-type: none; padding: 0.5rem 1rem; background: #f9f9f9; border-radius: 10px;}
+.tabledb-ul li{padding: 0.5rem 0; border-bottom: 1px dashed #ebebeb;cursor: pointer;color: #6c757d; font-weight: bold; font-size: 15px; }
+.tabledb-ul li a{color: #6c757d;}
+.tabledb-ul li:hover a, .tabledb-ul .tabledb-li-active a{color: rgba(38, 185, 154, 0.9);}
+.tabledb-header{padding: 0.8rem; background: #f9f9f9; border-radius: 10px 10px 0 0; font-weight: bold; color: #6c757d;}	
+.tabledb-type{text-transform: uppercase;}

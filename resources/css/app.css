@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .home-title {
+        @apply text-center text-cmain3 uppercase;
+    }
+}

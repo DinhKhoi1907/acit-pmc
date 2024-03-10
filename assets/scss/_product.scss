@@ -1,0 +1,147 @@
+.detail {
+	max-width: 960px;
+	margin: 0 auto;
+	&__name {
+		font-size: 1.75rem;
+		font-weight: bold;
+		color: #000000;
+		text-transform: uppercase;
+	}
+	&__price {
+		&--new {
+			font-size: 1.5rem;
+			font-weight: bold;
+			color: #E60000;
+		}
+		&--old {
+			font-size: 0.875rem;
+			font-weight: bold;
+			color: #B1B1B1;
+			text-decoration: line-through;
+			padding-bottom: 0.25rem;
+			padding-left: 0.625rem;
+		}
+	}
+	&__properties {
+		&__name {
+			font-size: 0.875rem;
+			font-weight: bold;
+			color: #000;
+			margin-bottom: 0.625rem;
+		}
+		&-items {
+			border: 1px solid #000000;
+			min-width: 30px;
+			min-height: 30px;
+			color: #999999;
+			font-size: 0.875rem;
+			text-align: center;
+			line-height: 30px;
+			margin-right: 0.313rem;
+			padding: 0 0.313rem;
+			cursor: pointer;
+		}
+	}
+	&__wishlist {
+		width: 100%;
+		height: 44px;
+		background: #2B2B2B;
+		border: 0;
+		padding: 0;
+		cursor: pointer;
+		font-size: 1rem;
+		font-weight: bold;
+		color: #fff;
+		text-transform: uppercase;
+		i {
+			font-size: 1.125rem;
+		}
+	}
+	&__buynow {
+		width: 100%;
+		height: 44px;
+		background: var(--color-primary);
+		border: 0;
+		padding: 0;
+		cursor: pointer;
+		font-size: 1rem;
+		font-weight: bold;
+		color: #000;
+		text-transform: uppercase;
+		i {
+			font-size: 1.125rem;
+		}
+	}
+}
+.quantity {
+	width: 100px;
+	height: 34px;
+	border: 1px solid #000000;
+	&__button {
+		width: 40px;
+		height: 100%;
+		border: 0;
+		background: transparent;
+		padding: 0;
+		cursor: pointer;
+		position: relative;
+		&--minus:after {
+			position: absolute;
+			content: "";
+			width: 12px;
+			height: 2px;
+			background: #bbbbbb;
+			left: calc(50% - 6px);
+			top: calc(50% - 1px);
+		}
+		&--plus {
+			&:before {
+				position: absolute;
+				content: "";
+				width: 12px;
+				height: 2px;
+				background: #bbbbbb;
+				left: calc(50% - 6px);
+				top: calc(50% - 1px);
+			}
+			&:after {
+				position: absolute;
+				content: "";
+				width: 2px;
+				height: 12px;
+				background: #bbbbbb;
+				left: calc(50% - 1px);
+				top: calc(50% - 6px);
+			}
+		}
+	}
+	input {
+		width: 30px;
+		height: 100%;
+		border: 0;
+		text-align: center;
+		font-weight: bold;
+		font-size: 0.875rem;
+		color: #000;
+	}
+}
+.gallery-thumb-pro {
+	position: relative;
+	padding: 0 30px;
+	.custom-owl-button {
+		position: absolute;
+		padding: 0;
+		border: 0;
+		color: rgb(50,53,60);
+		top: calc(50% - 14px);
+		background: transparent;
+		font-size: 1.188rem;
+		cursor: pointer;
+	}
+	.custom-owl-prev {
+		left: 10px;
+	}
+	.custom-owl-next {
+		right: 10px;
+	}
+}

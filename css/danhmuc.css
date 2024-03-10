@@ -1,0 +1,41 @@
+.detail-danhmuc-top{display: flex;margin-bottom: 35px;border: 0.75px solid #D1D1D1; border-radius: 5px;flex-wrap: wrap;}
+.detail-danhmuc-top-img{width: 59%;position: relative;}
+.detail-danhmuc-top-img img{border-radius: 3px;}
+.detail-danhmuc-top-info{width: 41%; padding: 1.5rem 2rem;background: rgb(209 209 209 / 25%);}
+.detail-danhmuc-top-name{}
+.detail-danhmuc-top-name a{color: #0A0A0B;font-weight: 700;font-size: 18px;display: block; line-height: 1.5;}
+.detail-danhmuc-top-date{display: flex; font-weight: 600; font-size: 12px; margin: 15px 0;}
+.detail-danhmuc-top-des{color: #0A0A0B;font-weight: 400;font-size: 16px;text-align: justify;}
+.detail-danhmuc-top-detail{display: flex;align-items: center;justify-content: space-between;margin-top: 1rem;}
+
+.detail-danhmuc-middle{display: flex;border-top: 0.75px solid #D1D1D1;border-bottom: 0.75px solid #D1D1D1;padding: 35px 0;margin-bottom: 35px;}
+.detail-danhmuc-middle-item{width: calc(100% / 3);margin-right: 17px;}
+.detail-danhmuc-middle-item:last-child{margin-right: 0;}
+.detail-danhmuc-middle-img{position: relative;}
+.detail-danhmuc-middle-img img{border-radius: 3px;}
+.detail-danhmuc-middle-name{margin-top: 1rem;}
+.detail-danhmuc-middle-name a{display: block;line-height: 1.5;font-weight: 700; font-size: 18px;color: #0A0A0B;display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden;}
+.detail-danhmuc-middle-date{display: flex; font-weight: 600; font-size: 12px; margin: 15px 0;}
+.detail-danhmuc-middle-des{color: #0A0A0B;font-weight: 400;font-size: 16px;text-align: justify;display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; overflow: hidden;}
+
+.detail-danhmuc-bottom .home-tintuc-item:last-child{margin-bottom: 0;}
+
+.detail-title-main{text-align: left;color: #0A0A0B;font-weight: 700; font-size: 36px;}
+.detail-page-detail{display: flex;justify-content: unset;margin: 1.5rem 0;}
+.page-detail-others .home-tintuc-item:last-child{margin-bottom: 0;border-bottom: none;padding-bottom: 0;}
+
+
+@media screen and (max-width: 700px){
+	.detail-danhmuc-top-img { width: 100%; }
+	.detail-danhmuc-top-info { width: 100%;}
+
+	.detail-danhmuc-over{overflow: auto; max-width: 100%; padding-right: 0;margin-bottom: 35px;}
+	.detail-danhmuc-middle{width: 150%; overflow: auto;margin-bottom: 0;border: none;}
+
+	.detail-title-main{font-size: 25px;}
+}
+
+@media screen and (max-width: 450px){
+	.detail-danhmuc-middle { width: 200%;}
+}
+

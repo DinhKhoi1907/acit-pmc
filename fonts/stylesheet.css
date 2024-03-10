@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Lander Grande';
+    src: url('LanderGrande-Regular.eot');
+    src: url('LanderGrande-Regular.eot?#iefix') format('embedded-opentype'),
+        url('LanderGrande-Regular.woff2') format('woff2'),
+        url('LanderGrande-Regular.woff') format('woff'),
+        url('LanderGrande-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

@@ -1,0 +1,275 @@
+.infomation {
+	background: #000;
+	position: sticky;
+	top: 52px;
+	z-index: 9999;
+	&-items {
+		font-family: "UTMPacificStandard";
+		font-size: 20px;
+		color: #fff;
+		padding: 5px 10px;
+		span {
+			color: $color2;
+		}
+	}
+}
+.booking {
+	&-layout {
+		max-width: 500px;
+		margin: 0 auto;
+		background: #f1f1f1;
+	}
+	&-content {
+		padding: 0 3px;
+		position: relative;
+	}
+	&-title {
+		font-family: "UTMPacificStandard";
+		font-size: 25px;
+		color: $color1;
+		text-transform: uppercase;
+		padding: 10px;
+	}
+	&-bottom {
+		@extend %flex-between;
+		position: sticky;
+		bottom: 0;
+		margin-top: 10px;
+		z-index: 9999;
+	}
+	&-button {
+		font-family: "UTMPacificStandard";
+		font-size: 20px;
+		color: #000;
+		text-align: center;
+		text-transform: uppercase;
+		line-height: 50px;
+		cursor: pointer;
+		&-prev {
+			background: #000;
+			color: #fff;
+			width: calc(40% - 5px);
+		}
+		&-next {
+			background: $color2;
+			width: calc(60% - 5px);
+		}
+		&-submit {
+			display: none;
+			background: $color2;
+			width: calc(60% - 5px);
+		}
+	}
+}
+.salon {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 3px;
+	&-items {
+		background: #fff;
+		padding: 10px;
+		cursor: pointer;
+		&__name {
+			font-family: "UTMPacificStandard";
+			font-size: 18px;
+			text-align: center;
+			text-transform: uppercase;
+		}
+		&__address {
+			font-size: 16px;
+		}
+		&.active {
+			background: #000;
+			.salon-items__name, .salon-items__address {
+				color: #fff;
+			}
+		}
+	}
+}
+.stylist-items {
+	padding: 3px 0;
+	cursor: pointer;
+	.w-img {
+		border-radius: 50%;
+		overflow: hidden;
+		margin-bottom: 5px;
+	}
+	&__name {
+		font-size: 16px;
+		color: $color1;
+		text-align: center;
+		text-transform: capitalize;;
+	}
+	&.active {
+		.w-img {
+			box-shadow: 0 0 0 3px $color2;
+		}
+		.stylist-items__name {
+			color: $color2;
+		}
+	}
+}
+.date {
+	&-grid {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 2px;
+		margin-bottom: 2px;
+	}
+	&-items {
+		background: #fff;
+		cursor: pointer;
+		padding: 5px 0;
+		b {
+			display: block;
+			font-family: $font2;
+			font-size: 18px;
+			font-weight: normal;
+			color: $color1;
+			text-align: center;
+			text-transform: uppercase
+		}
+		span {
+			display: block;
+			font-size: 16px;
+			color: $color1;
+			text-align: center;
+			text-transform: capitalize;
+		}
+		&.active {
+			background: #000;
+			b, span {
+				color: #fff;
+			}
+		}
+	}
+}
+.time {
+	display: none;
+	&-nav {
+		position: relative;
+		.custom-owl-prev, .custom-owl-next {
+			@extend %transition;
+			position: absolute;
+			font-size: 60px;
+			color: #999;
+			cursor: pointer;
+			top: 50%;
+			transform: translate(0, -50%);
+			z-index: 998;
+			&:hover {
+				color: $color1;
+			}
+		}
+		.custom-owl-prev {
+			left: -40px;
+		}
+		.custom-owl-next {
+			right: -40px;
+		}
+	}
+	&-items {
+		background: #fff;
+		margin-bottom: 2px;
+		padding: 10px;
+		cursor: pointer;
+		position: relative;
+		&:after {
+			position: absolute;
+			content: "";
+			width: 100%;
+			height: 3px;
+			left: 0;
+			bottom: 0;
+		}
+		b {
+			display: block;
+			font-size: 30px;
+			font-weight: normal;
+			color: $color1;
+			text-align: center;
+			line-height: 30px;
+		}
+		span {
+			display: block;
+			color: $color1;
+			text-align: center;
+		}
+		&.available:after {
+			background: #42bc00;
+		}
+		&.unavailable {
+			b, span {
+				color: #bdbdbd;
+			}
+			&:after {
+				background: #bdbdbd;
+			}
+		}
+		&.active {
+			background: #000;
+			span, b {
+				color: #fff;
+			}
+		}
+	}
+	.box_owl .time-items:last-child {
+		margin-bottom: 0;
+	}
+	&.active {
+		display: block;
+	}
+}
+@keyframes scissors1 {
+	0%{
+		transform: translate(-50%, -50%) rotate(55deg);
+	}
+	100% {
+		transform: translate(-50%, -50%) rotate(40deg);
+	}
+}
+@keyframes scissors2 {
+	0%{
+		transform: translate(-50%, -50%) rotate(40deg);
+	}
+	100% {
+		transform: translate(-50%, -50%) rotate(50deg);
+	}
+}
+.loading {
+	display: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: rgba(255,255,255,.9);
+	z-index: 999;
+	img {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		&:nth-child(1) {
+			transform: translate(-50%, -50%) rotate(55deg);
+			animation-name: scissors1;
+			animation-duration: .5s;
+			animation-iteration-count: infinite;
+			animation-direction: alternate;
+		}
+		&:nth-child(2) {
+			transform: translate(-50%, -50%) rotate(40deg);
+			animation-name: scissors2;
+			animation-duration: .5s;
+			animation-iteration-count: infinite;
+			animation-direction: alternate;
+		}
+	}
+}
+.step {
+	display: none;
+	&.active {
+		display: block;
+		animation-name: fadeIn;
+		animation-duration: 1s;
+	}
+}

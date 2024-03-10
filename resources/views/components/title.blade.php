@@ -1,0 +1,1 @@
+<p class="color-[#1B1B1B] font-semibold text-[32px] mb-[0.8rem]"><span>{{$text}}</span></p>

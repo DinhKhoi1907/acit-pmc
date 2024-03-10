@@ -1,0 +1,36 @@
+@mixin font-face($name, $exts: woff2 woff) {
+	$src: null;
+	@each $ext in $exts {
+		$src: append($src, url(quote("../fonts/" + $name + "." + $ext)) format(quote($ext)), comma);
+	}
+	@font-face {
+		font-family: quote($name);
+		font-style: normal;
+		font-display: block;
+		font-weight: normal;
+		src: $src;
+	}
+}
+@mixin hover {
+	&:hover { @content; }
+}
+@mixin hover-focus {
+	&:hover,
+	&:focus {
+		@content;
+	}
+}
+@mixin plain-hover-focus {
+	&,
+	&:hover,
+	&:focus {
+		@content;
+	}
+}
+@mixin hover-focus-active {
+	&:hover,
+	&:focus,
+	&:active {
+		@content;
+	}
+}

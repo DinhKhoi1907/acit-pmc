@@ -1,0 +1,65 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@layer components {
+    .menu-li{
+        @apply relative flex items-center h-full;
+    }
+
+    .title-main{
+        @apply font-extrabold text-black text-3xl md:text-[40px] leading-9 md:leading-[55px] tracking-[0.06em] mb-10 uppercase text-center;
+    }
+    
+    .home-title {
+        @apply font-bold text-3xl lg:text-[42px] uppercase mb-8 text-center text-cmain;
+    }
+
+    .detail-title {
+        @apply font-extrabold text-black text-xl sm:text-2xl md:text-[26px] leading-7 sm:leading-8 md:leading-[45px] tracking-[0.06em] mb-7 uppercase text-center opacity-80;
+    }
+
+    .more-btn{
+        @apply inline-flex text-white bg-cmain rounded-[22px] w-[133px] h-[33px] justify-center items-center text-2xl md:text-base font-bold pb-[3px] hover:bg-cmain4; 
+    }
+
+    .title-contact{
+        @apply text-xl font-semibold md:text-base text-cmain;
+    }
+
+    .title-footer{
+        @apply text-white uppercase tracking-[0.1em] mb-5 text-xl font-bold;
+    }
+
+    .title-li{
+        @apply text-white capitalize tracking-[0.1em] text-xl md:text-base font-Gilroy transition-all duration-500 hover:text-cmain inline-block;
+    }
+
+    .alert-data{
+        @apply p-5 rounded-md bg-[rgba(255,185,63,20%)];
+    }
+
+    .scale-img{
+        @apply overflow-hidden transition-all duration-200 group-hover:scale-105;
+    }
+
+    .btn-main{
+        @apply inline-flex px-6 py-3 text-white rounded-md bg-gradient-to-t from-[#FA841A] to-[#FDA300] transition-all duration-700;
+    }
+
+
+    .tab-active{
+        @apply border-0 border-b border-solid border-cmain2 text-cmain2;
+    }
+
+    .table-h{
+        @apply px-2 py-8 text-center text-white capitalize align-middle border border-solid bg-cmain border-cmain;
+    }
+
+    .table-d{
+        @apply p-4 text-base text-center border border-solid text-cmain border-cmain3;
+    }
+    .title-thanh{
+        @apply absolute -bottom-3 left-[calc(50%-25px)] w-[50px] border-0 border-b border-cmain border-solid;
+    }
+}
