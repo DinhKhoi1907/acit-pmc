@@ -35,7 +35,7 @@ module.exports = {
                 footer: "url('../../img/bg_footer2.jpg')",
             },
             fontFamily: {
-                display: ["Gilroy", "sans-serif"],
+                display: ["SVN-Gilroy", "sans-serif"],
                 body: ["Roboto", "sans-serif"],
                 Mulish: ["Roboto", "sans-serif"],
                 Montserrat: ["Montserrat", "sans-serif"],

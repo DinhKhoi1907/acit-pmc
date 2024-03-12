@@ -40,7 +40,7 @@
     @endif --}}
     @if ($products_nb)
         <div class="section-product-nb"
-            @if($backgroundspnb) style="background-image: url({{ Thumb::Crop(UPLOAD_PHOTO, $backgroundspnb[0]['background'], 1920, 1067, 1) }})" @endif>
+            @if ($backgroundspnb) style="background-image: url({{ Thumb::Crop(UPLOAD_PHOTO, $backgroundspnb[0]['background'], 1920, 1067, 1) }})" @endif>
             <div class="content-page-layout main-content py-5">
                 <div class="text-center py-14 revealOnScroll" data-animation="animate__fadeInUp">
                     <h1 class="uppercase text-[#fff] text-[32px] font-bold">Sản phẩm nổi bật</h1>
@@ -60,7 +60,8 @@
                                 <img class="rounded-lg z-10" src="public/upload/test/image_78.png" width="285"
                                     height="301">
                                 <div class="p-5 flex flex-col gap-3 z-10">
-                                    <h1 class="text-cmain font-[18px] font-semibold uppercase">{{ $v['ten' . $lang] }}</h1>
+                                    <h1 class="text-cmain font-[18px] font-semibold uppercase text-split-2 min-h-[70px]">
+                                        {{ $v['ten' . $lang] }}</h1>
                                     <p class="text-cmain1 font-medium text-[16px]">Xem chi tiết</p>
                                 </div>
                                 <div
@@ -376,6 +377,13 @@
 
         .product-item:hover button {
             opacity: 0.5;
+        }
+        .arrow-left-product {
+            left: -3.5em;
+        }
+
+        .arrow-right-product {
+            right: -3.5em;
         }
     </style>
 @endpush

@@ -2,7 +2,7 @@
   <div class="hinhtron"></div>
   <div class="content-page-layout py-16">
       <div class="dichvu-title mx-10 revealOnScroll" data-animation="animate__fadeInUp">
-          <h1>Dịch vụ của chúng tôi</h1>
+          <h1>Dịch vụ</h1>
           <p class="text-center">{{ $seopage_static['dichvu']['mota' . $lang] }}</p>
       </div>
       <div class="dichvu__owl owl-carousel owl-theme mt-10">

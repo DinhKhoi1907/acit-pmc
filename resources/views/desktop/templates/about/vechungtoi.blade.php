@@ -1,7 +1,7 @@
 @if ($chungnhan_bangkhen)
     <div>
         <div class="doitac-section pt-20">
-            <h1 class="text-center">Chứng nhận và bằng khen</h1>
+            <h1 class="text-center">CHỨNG NHẬN VÀ BẰNG KHEN</h1>
             <div class="content-page-layout">
                 <div class="p-10">
                     <div class="chungnhan__owl owl-carousel owl-theme">
@@ -25,17 +25,9 @@
 @if ($videos && isset($videos[0]['video']))
     <div class="section-vechungtoi">
         <div
-            class="flex flex-col gap-6 justify-center items-center lg:pt-32 pt-12 pb-20 px-4 lg:px-20 dichvu-title \\uppercase">
-            <div>
-                <svg xmlns="http://www.w3.org/2000/svg" width="80" height="70" viewBox="0 0 80 70"
-                    fill="none">
-                    <path opacity="0.5"
-                        d="M78.9948 1.72357L79.0649 1.24052L78.5837 1.15884C67.635 -0.699663 59.2792 1.36498 53.6568 7.49485C48.0721 13.496 45.3213 22.3199 45.3213 33.879V69V69.5H45.8213H78.5H79V69V35.1944V34.6944H78.5H62.0052C61.5492 30.9763 61.7009 27.6815 62.4451 24.8011C63.3004 21.7429 64.8707 19.4367 67.144 17.8462L67.1441 17.8463L67.1539 17.8391C69.406 16.1805 72.4904 15.4858 76.4724 15.83L76.9425 15.8707L77.0103 15.4037L78.9948 1.72357ZM34.6735 1.72357L34.7436 1.24052L34.2624 1.15884C23.3138 -0.699659 14.9579 1.36497 9.33552 7.49481C3.75076 13.496 1 22.3199 1 33.879V69V69.5H1.5H34.1787H34.6787V69V35.1944V34.6944H34.1787H17.6839C17.2279 30.9763 17.3795 27.6815 18.1238 24.8011C18.9791 21.7429 20.5494 19.4367 22.8227 17.8462L22.8228 17.8463L22.8326 17.8391C25.0847 16.1805 28.1691 15.4858 32.1511 15.83L32.6212 15.8707L32.689 15.4037L34.6735 1.72357Z"
-                        stroke="#FF0000" />
-                </svg>
-                <span class="pl-5 text-[24px] font-semibold leading-[110%] text-black">Video về chúng tôi</span>
-            </div>
-            <h1 class="text-center">{{ $vechungtoi['ten' . $lang] }}</h1>
+            class="flex flex-col gap-6 justify-center items-center lg:pt-32 pt-12 pb-20 px-4 lg:px-20 dichvu-title \\uppercase doitac-section">
+            <h1 class="text-center">VIDEO</h1>
+            {{-- <h1 class="text-center">{{ $vechungtoi['ten' . $lang] }}</h1> --}}
             {{-- <p class="text-center text-sm leading-[160%] opacity-70">
                 {{ $videos[0]['mota' . $lang] }}
             </p> --}}
@@ -113,11 +105,11 @@
             margin-top: -10px !important;
         }
 
-        .arrow-left-product {
+        .section-vechungtoi .arrow-left-product {
             left: 8.5em;
         }
 
-        .arrow-right-product {
+        .section-vechungtoi .arrow-right-product {
             right: 8.5em;
         }
     </style>

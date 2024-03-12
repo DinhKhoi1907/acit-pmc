@@ -25,9 +25,10 @@
             </div>
 
             <a href="" class="flex items-center justify-center py-2 text-center header-logo himg">
-                <img class="inline-block"
+                {{-- <img class="inline-block"
                     src="{{ Thumb::Crop(UPLOAD_PHOTO, $photo_static['logo']['photo'], 59, 59, 1) }}" alt="logo"
-                    width="59" height="auto">
+                    width="59" height="auto"> --}}
+                    <img src="img/logo_main.png" alt="" width="61px">
             </a>
 
             <div class="header-res-right">

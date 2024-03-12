@@ -24,14 +24,14 @@
     </div>
 </div> --}}
 
-<div class="lg:w-[calc(100%/3-16px)] md:w-[calc(100%/2-12px)] relative overflow-hidden group revealOnScroll cursor-pointer bg-white shadow-md rounded-lg card-nb"
+<div class="lg:w-[calc(100%/3-16px)] md:w-[calc(100%/2-12px)] relative overflow-hidden group revealOnScroll cursor-pointer box-info-product bg-white shadow-md rounded-lg card-nb"
     data-animation="animate__fadeInUp">
     <a href="{{ $item['tenkhongdau' . $lang] }}" class="product-item">
         @if($item->HasLevelOne)
         <button
             class="absolute bg-cmain text-white py-3 px-6 right-[6px] top-[22px] border-0 text-[14px] rounded-lg z-10">{{ $item->HasLevelOne->tenvi }}</button>
         @endif
-        <img class="rounded-lg z-10" src="public/upload/test/image_78.png" width="292" height="301">
+        <img class="rounded-lg z-10" src="{{ Thumb::Crop(UPLOAD_PRODUCT, $item['photo'], 292, 301, 1) }}" width="292" height="301">
         <div class="p-5 flex flex-col gap-3 z-10">
             <h1 class="text-cmain font-[18px] font-semibold uppercase">{{ $item['ten' . $lang] }}</h1>
             <p class="text-cmain1 font-medium text-[16px]">Xem chi tiết</p>

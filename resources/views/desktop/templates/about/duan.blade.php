@@ -6,7 +6,7 @@
                     <div class="pageBanner">
                         <div class="contentTop bg-cmain8 px-[60px] lg:px-[120px] pt-10 pb-16">
                             <div class="flex items-center gap-5 flex-wrap lg:flex-nowrap">
-                                <div class="text-[32px] lg:min-w-[387px] font-bold capitalize text-white">DỰ ÁN NỔI BẬT CỦA CHÚNG TÔI</div>
+                                <div class="text-[32px] lg:min-w-[387px] font-bold capitalize text-white">DỰ ÁN NỔI BẬT</div>
                                 <div class="text-[14px] opacity-70 leading-[160%] text-white">
                                     {{ $seopage_static['news']['mota' . $lang] }}</div>
                             </div>

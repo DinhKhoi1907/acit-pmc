@@ -28,10 +28,10 @@
                 <div class="xl:col-span-6 lg:col-span-6 md:col-span-4 lg:z-10 revealOnScroll"
                     data-animation="animate__fadeInLeft" data-timeout="300">
                     <div>
-                        <span class="font-medium text-3xl xl:text-5xl -mb-2 mr-4 text-black">Về chúng tôi</span>
-                        <span class="font-extrabold text-6xl xl:text-9xl text-cmain">{{ isset($settingOption['tenchinh']) ? $settingOption['tenchinh'] : 'ACIT' }}</span>
+                        {{-- <span class="font-medium text-3xl xl:text-5xl -mb-2 mr-4 text-black">Về chúng tôi</span> --}}
+                        <span class="font-extrabold text-6xl xl:text-8xl text-cmain">{{ isset($settingOption['tenchinh']) ? $settingOption['tenchinh'] : 'ACIT' }}</span>
                     </div>
-                    <h1 class="text-cmain font-medium text-2xl">
+                    <h1 class="text-cmain font-medium text-2xl py-6">
                         {{ $row_detail['ten' . $lang] }}
                     </h1>
                     <div class="flex flex-col gap-y-6 mt-4 font-normal text-xl xl:pr-30">

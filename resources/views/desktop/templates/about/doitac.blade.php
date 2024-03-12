@@ -1,7 +1,7 @@
 @if ($doitac)
     <div>
         <div class="doitac-section py-20">
-            <h1 class="text-center">Đối tác của chúng tôi</h1>
+            <h1 class="text-center">Đối tác</h1>
             <div class="content-page-layout">
                 <div class="p-10">
                     <div class="doitac__owl owl-carousel owl-theme">
@@ -29,7 +29,6 @@
             text-align: center;
             font-size: 32px;
             font-weight: 700;
-            line-height: 110%;
             text-transform: uppercase;
             background: linear-gradient(159deg, #39B54A 2.34%, #076C40 82.55%);
             background-clip: text;

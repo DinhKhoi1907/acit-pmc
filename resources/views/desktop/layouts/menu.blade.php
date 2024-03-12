@@ -6,11 +6,13 @@
 <div id="menu" class="fixed w-full top-0 z-[1000] hidden lg:block transition-all duration-500 bg-white">
     <div class="relative flex">
         <div class="w-full @yield('menu')">
-            <div class="flex items-center justify-between w-full py-[14px] content-page-layout">
+            <div class="flex items-center justify-between w-full py-[16px] content-page-layout">
                 <div class="flex items-center">
-                    <a href=""><img
-                            src="{{ Thumb::Crop(UPLOAD_PHOTO, $photo_static['logo']['photo'], 59, 59, 1) }}"
-                            alt="" width="59" height="auto"></a>
+                    {{-- <a href=""><img
+                            src="{{ Thumb::Crop(UPLOAD_PHOTO, $photo_static['logo']['photo'], 100, 100, 1) }}"
+                            alt="" width="100" height="auto"></a> --}}
+
+                    <a href=""><img src="img/logo_main.png" alt="" width="61px"></a>
                     <a href="">
                         <img src="img/logo_3.png" alt="">
                     </a>
@@ -76,7 +78,7 @@
                                     class="absolute right-0 top-[25px] border-0 border-solid border-gray-200 h-[40%] border-r opacity-50"></span>
                             </li> --}}
                             <li class="{{ Helper::currentMenu('ve-chung-toi') }}">
-                                <a href="ve-chung-toi">{{ __('Giới Thiệu') }}</a>
+                                <a href="ve-chung-toi">{{ __('Giới thiệu') }}</a>
                                 <span
                                     class="absolute right-0 top-[25px] border-0 border-solid border-gray-200 h-[40%] border-r opacity-50"></span>
                                 {{-- <ul>
@@ -91,16 +93,16 @@
                                 {!! Helper::showCategoryMenuMulty('', 'product', $lang) !!}
                             </li>
                             <li class="{{ Helper::currentMenu('dich-vu') }}">
-                                <a href="dich-vu">{{ __('Dịch Vụ') }}</a>
+                                <a href="dich-vu">{{ __('Dịch vụ') }}</a>
                                 <span
                                     class="absolute right-0 top-[25px] border-0 border-solid border-gray-200 h-[40%] border-r opacity-50"></span>
                             </li>
-                            <li class="{{ Helper::currentMenu('catalogue') }}"><a href="catalogue">{{ __('Tài Liệu') }}
+                            <li class="{{ Helper::currentMenu('catalogue') }}"><a href="catalogue">{{ __('Tài liệu') }}
                                 </a>
                                 <span
                                     class="absolute right-0 top-[25px] border-0 border-solid border-gray-200 h-[40%] border-r opacity-50"></span>
                             </li>
-                            <li class="{{ Helper::currentMenu('tin-tuc') }}"><a href="tin-tuc">{{ __('Tin Tức') }}</a>
+                            <li class="{{ Helper::currentMenu('tin-tuc') }}"><a href="tin-tuc">{{ __('Tin tức') }}</a>
                                 <span
                                     class="absolute right-0 top-[25px] border-0 border-solid border-gray-200 h-[40%] border-r opacity-50"></span>
                                 {!! Helper::showCategoryMenuMulty('', 'news', $lang) !!}
